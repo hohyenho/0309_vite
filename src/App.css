@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    background-color: #f7f7f7;
+    color: #222;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+input{
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/* App.jsx */
+.wrap{
+    min-height: 100vh;
+}
+.inner{
+    width: min(1100px,92%);
+    /* 1100px, 92% 비교해서 작은 값을 선택해서 넓이로 사용 */
+    margin: 0 auto;
+}
+.header{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.header_inner{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+}
+.nav{}
+.nav .nav_list{
+    display: flex;
+    gap: 20px;
+    /* 개체와 개체사이의 여백 지정 */
+}
